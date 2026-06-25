@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Rosa</title>
+    <title>Portal Notícias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculadora">
-    <div id="display">0</div>
+<header>
+    <h1>📰 Portal Notícias</h1>
+    <p>As últimas notícias em tempo real</p>
+</header>
 
-    <div class="botoes">
-        <button onclick="limpar()">C</button>
-        <button onclick="apagar()">⌫</button>
-        <button onclick="adicionar('%')">%</button>
-        <button onclick="adicionar('/')">÷</button>
+<nav>
+    <a href="#">Início</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Esportes</a>
+    <a href="#">Política</a>
+</nav>
 
-        <button onclick="adicionar('7')">7</button>
-        <button onclick="adicionar('8')">8</button>
-        <button onclick="adicionar('9')">9</button>
-        <button onclick="adicionar('*')">×</button>
+<main>
+    <article class="noticia">
+        <img src="https://picsum.photos/800/400" alt="Notícia">
+        <h2 id="titulo">
+            Nova tecnologia promete revolucionar o mercado
+        </h2>
+        <p id="texto">
+            Especialistas afirmam que a nova inovação poderá transformar diversos setores da economia nos próximos anos.
+        </p>
 
-        <button onclick="adicionar('4')">4</button>
-        <button onclick="adicionar('5')">5</button>
-        <button onclick="adicionar('6')">6</button>
-        <button onclick="adicionar('-')">−</button>
+        <button onclick="trocarNoticia()">
+            Próxima notícia
+        </button>
+    </article>
+</main>
 
-        <button onclick="adicionar('1')">1</button>
-        <button onclick="adicionar('2')">2</button>
-        <button onclick="adicionar('3')">3</button>
-        <button onclick="adicionar('+')">+</button>
-
-        <button onclick="adicionar('0')" class="zero">0</button>
-        <button onclick="adicionar('.')">.</button>
-        <button onclick="calcular()" class="igual">=</button>
-    </div>
-</div>
+<footer>
+    <p>&copy; 2025 Portal Notícias</p>
+</footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
